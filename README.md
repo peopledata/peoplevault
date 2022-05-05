@@ -60,17 +60,11 @@ PeopleVault did not make any changes on Vault's core, but make some optimized an
 
 ![peoplevault arch](https://github.com/peopledata/whitebook/blob/83002a8469de855206a59f51935ddd2ef40b7399/src/peopleVault-arc.png)
 
-PeopleVault is a two-tier KMS, which a Root Vault is deployment close with individual person and a Vault Pod in remote cloud.  
+PeopleVault is a two-tier KMS, which a Root Vault is deployed close with individual person and a Vault Pod in remote cloud. The Root Vault is the root of the Vault Pod, and invesibale from outside. The Vault Pod is intermediate Vault which provider major KMS service to outside. The individual person just manage the Root vault and hold a root phase word/pin only, the rest KMS service will be automatically processed by Root Vault and Vault Pod.  
 
-There will be three release version: 
- - Vault at Home
- - Vault at Device
- - Valut Pod
+The Root Vault has two kind of implementation: VaH and VaD.
+ - Vault at Home(VaH): PeopleVault will be deployed on a local linux-machine as Root Vault. Individual person can start/stop/terminated the Root Vault, and generate new root-key, Root-CAs or Root-like token on demand. 
+ - Vault at Device(VaD): PeopleVault will be depolyed on a device (such as U disk, safe hard device...etc）as Root Vault. It is a simple and cheap way for individual person to manage their root vault. It has limited function.   
 
-
-Getting Started
--------------------------------
-PeopleVault 
-
-Developing PeopleVault
---------------------
+The Vaule Pod is a vault server on duty, and handle most of the KMS service for individual person. 
+ - Valut Pod: PeopleVault deplyed on k8s pod, and will automatically process most of KMS service. 
