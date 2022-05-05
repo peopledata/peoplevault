@@ -58,7 +58,7 @@ KMS is alwasy a complicated work, even to experts. Our mission is to make everyo
 
 PeopleVault did not make any changes on Vault's core, but make some optimized and add some functions on its body. 
 
-![peoplevault arch](https://github.com/peopledata/peoplevault/blob/7eddc514014efdf4261942f560a0f04a72b7d5d2/peopleVault arch.png)
+![peoplevault arch](https://github.com/peopledata/whitebook/blob/83002a8469de855206a59f51935ddd2ef40b7399/src/peopleVault-arc.png)
 
 PeopleVault is a two-tier KMS, which a Root Vault is deployment close with individual person and a Vault Pod in remote cloud.  
 
