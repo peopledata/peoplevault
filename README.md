@@ -1,6 +1,6 @@
 # PeopleVault
 
-PeopleVault forked from ![CircleCI](https://circleci.com/gh/hashicorp/vault.svg?style=svg) and tailed for PeopleData Community.
+PeopleVault forked from ![Vault Img](https://circleci.com/gh/hashicorp/vault.svg?style=svg) and tailed for PeopleData Community.
 
 In digital society, there are numerous encrypt/decrypt activities everyday. That's why Key Management System(KMS) play more and more important roler for everyone. In Web1.0 and Web2.0，KMS is centralized and most of time invisable to individual person.  In Web3.0, People will take back their data rights, control their data usage and benefit from their data assets. That's why the community need PeopleVault: a decentralized, distributed KMS for Everyone.
 
