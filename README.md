@@ -7,6 +7,9 @@ In digital society, there are numerous encrypt/decrypt activities everyday. That
 
 ## About Hasicorp/Vault
 
+![image](https://user-images.githubusercontent.com/79302978/166898005-591b851b-fd77-4d42-9816-7685cf326c48.png)
+
+
 Vault is a tool for securely accessing secrets. A secret is anything that you want to tightly control access to, such as API keys, passwords, certificates, and more. Vault provides a unified interface to any secret, while providing tight access control and recording a detailed audit log.
 
 A modern system requires access to a multitude of secrets: database credentials, API keys for external services, credentials for service-oriented architecture communication, etc. Understanding who is accessing what secrets is already very difficult and platform-specific. Adding on key rolling, secure storage, and detailed audit logs is almost impossible without a custom solution. This is where Vault steps in.
@@ -50,10 +53,24 @@ The key features of Vault are:
 - Tutorials: [HashiCorp's Learn Platform](https://learn.hashicorp.com/vault)
 - Certification Exam: [Vault Associate](https://www.hashicorp.com/certification/#hashicorp-certified-vault-associate)
 
+## About PeopleVault
+KMS is alwasy a complicated work, even to experts. Our mission is to make everyone to use KMS as easy as we can. Hashicorp/Vault provide powerful ability to help us achive this goal. 
+
+PeopleVault did not make any changes on Vault's core, but make some optimized and add some functions on its body. 
+
+![peoplevault arch](./src/images/peoplevault-arc.png)
+
+PeopleVault is a two-tier KMS, which a Root Vault is deployment close with individual person and a Vault Pod in remote cloud.  
+
+There will be three release version: 
+ - Vault at Home
+ - Vault at Device
+ - Valut Pod
+
 
 Getting Started
 -------------------------------
-
+PeopleVault 
 
 Developing PeopleVault
 --------------------
